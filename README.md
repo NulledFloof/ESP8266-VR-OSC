@@ -45,6 +45,8 @@ Now we want to remap paths. Enter the OSC path for the avatar on the incoming si
 
 If you are sending OSC commands to your game, set the `Incoming IP` as the ESP's IP and port "9003" and the path as "/Toggle0". `Outgoing IP` should be "127.0.0.1'' port "9000" with your avatar's game object toggle Example: "/avatar/parameters/<your_game_object>"
 
+**Note:** If OSC Router is having trouble receving commands, windows firewall may be blocking traffic for OSC Router.
+
 ![screenshot](https://github.com/NulledFloof/ESP8266-VR-OSC/blob/main/Images/OSCRouterSnip.png)
 
 
