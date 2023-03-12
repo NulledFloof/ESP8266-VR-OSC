@@ -12,11 +12,11 @@ int outPin = D2;        //vibration motor
 
 //OSC config variables
 int OSCportR = 9002; //port where this device will be listening
-int OSCportS = 9000; //port where this device will be sending
+int OSCportS = 9003; //port where this device will be sending
 const char* OSCip = "YourComputer's IP"; //device to send OSC commands TO
-const char* OSCpath = "/avatar/parameters/NoseBoop"; //OSC path for boolean haptics trigger. (Feel free to change "NoseBoop" to reflect your avatar settings).
+const char* OSCpath = "/Hap0"; //OSC path for boolean haptics trigger. (Feel free to change "NoseBoop" to reflect your avatar settings).
 const char* OSCpath1 = "/device/intensity";
-const char* OSCpath2 = "/avatar/parameters/RaveGlasses"; //Used to toggle boolean state on avatar. (Feel free to change "RaveGlasses" to reflect your avatar settings).
+const char* OSCpath2 = "/Toggle0"; //Used to toggle boolean state on avatar. (Feel free to change "RaveGlasses" to reflect your avatar settings).
 
 //osc variables
 float hap0 = 0; //haptics toggle state 
