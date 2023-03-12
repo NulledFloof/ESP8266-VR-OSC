@@ -1,5 +1,5 @@
 # ESP8266-VR-OSC
-It’s a quick and cheap way to add haptics to your VRheadset or body for social VR apps. I've designed this to work with ChilloutVR with respect to [kafeijao’s](https://github.com/kafeijao/Kafe_CVR_Mods/tree/master/OSC) OSC mod. Should work just fine with other social VR apps like VRchat.
+A quick and cheap way to add haptics to your VRheadset or body for social VR apps. I've designed this to work with ChilloutVR with respect to [kafeijao’s](https://github.com/kafeijao/Kafe_CVR_Mods/tree/master/OSC) OSC mod. Should work just fine with other social VR apps like VRchat.
 
 
 ## Hardware
