@@ -9,8 +9,9 @@ It’s a quick and cheap way to add haptics to your VRheadset or body for social
 
 - Module: Simply connect  its power, ground and input respectively to your ESP dev board.
 
-- DIY: All you need is a circular vibration motor, NPN transistor, and two resistors (330R & 10k). Assemble the circuit as shown:
-![screenshot]()
+- DIY: All you need is a circular vibration motor, NPN transistor, and two resistors (330R & 10k).
+
+![screenshot](https://github.com/NulledFloof/ESP8266-VR-OSC/blob/main/Images/Circuit.png)
 
 **Push button:** Use a normally open push button. Connect one pin to GND and the other to the designated pin on the dev-board.
 
@@ -23,9 +24,6 @@ From line 9-15, edit the following constant characters:
 - `OSCip` This will be the IP address of the computer running the VR application.
 
 **Changing of these OSC paths won't be necessary as you can remap these with ETC labs OSC router.**
-
-- `OSCpath` This is the OSC path where it will listen for the haptics trigger state. Change it to reflect your avatar's advanced avatar setting. (e.g. "/avatar/parameters/Nose'')
-- `OSCpath2` This is the OSC path where it will be sending the advanced avatar setting state. (e.g. "/avatar/parameters/Glasses")
 
 
 ## Avatar
@@ -47,7 +45,7 @@ Now we want to remap paths. Enter the OSC path for the avatar on the incoming si
 
 If you are sending OSC commands to your game, set the `Incoming IP` as the ESP's IP and port "9003" and the path as "/Toggle0". `Outgoing IP` should be "127.0.0.1'' port "9000" with your avatar's game object toggle Example: "/avatar/parameters/<your_game_object>"
 
-![screenshot](https://raw.githubusercontent.com/ElectronicTheatreControlsLabs/Downloads/master/Images/OSCRouter_Screenshot.png)
+![screenshot](https://github.com/NulledFloof/ESP8266-VR-OSC/blob/main/Images/OSCRouterSnip.png)
 
 
 
