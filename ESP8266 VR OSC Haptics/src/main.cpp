@@ -19,7 +19,7 @@ const char* OSCpath1 = "/device/intensity";
 const char* OSCpath2 = "/Toggle0"; //Used to toggle boolean state on avatar. (Feel free to change "RaveGlasses" to reflect your avatar settings).
 
 //osc variables
-float hap0 = 0; //haptics toggle state 
+bool hap0 = 0; //haptics toggle state 
 float inten = 100; //duty cycle, anything between 40-255 seems to work (@5v).
 bool toggle = 0;
 
