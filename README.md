@@ -29,7 +29,7 @@ From line 9-15, edit the following constant characters:
 ## Avatar
 ### CVR
 You will need to edit your avatar.
-- First, add an entry to your Advanced Avatar settings list and give it a name with no spaces. `Type` should be set to "Game Object Toggle" and `Generate Type` should be set to "Generate Float". `Default` and `Use Animation` should be left unselected. You can leave the "GameObjects'' list empty. Make sure to re-create your Animator. This will show up as a toggle within your advanced avatar settings menu in-game and will also be read with the OSC mod.
+- First, add an entry to your Advanced Avatar settings list and give it a name with no spaces. `Type` should be set to "Game Object Toggle" and `Generate Type` should be set to "Generate Boolean". `Default` and `Use Animation` should be left unselected. You can leave the "GameObjects'' list empty. Make sure to re-create your Animator. This will show up as a toggle within your advanced avatar settings menu in-game and will also be read with the OSC mod.
 - Second, add the "CVR Advanced Avatar Settings Trigger" script to the bone of your choosing. Set the position and scale the area accordingly, make sure "Enable Advanced Mode" and "Network Interactable" are selected. Set the `Setting Name` For both “On Enter” and “On Exit” Trigger to the Advanced Avatar Settings name we just made. `Setting Value` for the “On Enter Trigger” should be set to 1 and 0 for the “On Exit Trigger”. `Update Method` should be set to “Override” for both “On Enter” and “On Exit” Triggers.
 
 ### VRC
