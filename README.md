@@ -1,6 +1,7 @@
 # ESP8266-VR-OSC
 A quick and cheap way to add haptics to your VRheadset or body for social VR apps. I've designed this to work with ChilloutVR with respect to [kafeijao’s](https://github.com/kafeijao/Kafe_CVR_Mods/tree/master/OSC) OSC mod. Should work just fine with other social VR apps like VRchat.
 
+----
 
 ## Hardware
 **ESP8266:** You can use any ESP8266 based dev board, I've tested this with a NodeMCU v2 (ESP-12E module).
@@ -19,16 +20,16 @@ A quick and cheap way to add haptics to your VRheadset or body for social VR app
 ## Code Setup
 Using the PlatformIO add-on for Visual Studio Code, import the project folder, and open `main.cpp`
 
-From line 9-15, edit the following constant characters:
+From lines 5-16, edit the following constant characters:
 - `ssid` and `password`, this will be the name and password of your wifi AP.
 - `OSCip` This will be the IP address of the computer running the VR application.
 
-**Changing of these OSC paths won't be necessary as you can remap these with ETC labs OSC router.**
+**Changing the OSC paths won't be necessary as you can remap these with OSC Router.**
 
 
 ## Avatar
 ### CVR
-You will need to edit your avatar.
+Adding a haptics trigger:
 - First, add an entry to your Advanced Avatar settings list and give it a name with no spaces. `Type` should be set to "Game Object Toggle" and `Generate Type` should be set to "Generate Boolean". `Default` and `Use Animation` should be left unselected. You can leave the "GameObjects'' list empty. Make sure to re-create your Animator. This will show up as a toggle within your advanced avatar settings menu in-game and will also be read with the OSC mod.
 - Second, add the "CVR Advanced Avatar Settings Trigger" script to the bone of your choosing. Set the position and scale the area accordingly, make sure "Enable Advanced Mode" and "Network Interactable" are selected. Set the `Setting Name` For both “On Enter” and “On Exit” Trigger to the Advanced Avatar Settings name we just made. `Setting Value` for the “On Enter Trigger” should be set to 1 and 0 for the “On Exit Trigger”. `Update Method` should be set to “Override” for both “On Enter” and “On Exit” Triggers.
 
@@ -49,5 +50,13 @@ If you are sending OSC commands to your game, set the `Incoming IP` as the ESP's
 
 ![screenshot](https://github.com/NulledFloof/ESP8266-VR-OSC/blob/main/Images/OSCRouterSnip.png)
 
+----
 
+## Debugging
+There are a lot of moving parts to this, so here's a few programs that will help you:
+- [Protokol](https://hexler.net/protokol) is great for receiving OSC data. 
+- [SendOSC](https://github.com/yoggy/sendosc) is a command line app for sending OSC data. 
 
+Other notes:
+- Pay attention to the data type being sent and received, they have to be the same (bool/float)
+- OSC programs cannot use the same port at the same time.
