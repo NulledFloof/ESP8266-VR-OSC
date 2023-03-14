@@ -16,6 +16,7 @@ A quick and cheap way to add haptics to your VRheadset or body for social VR app
 
 **Push button:** Use a normally open push button. Connect one pin to GND and the other to the designated pin on the dev-board.
 
+**3D Printed mount:** You can my HTC Vive DAS mount for the NodeMCU board on [Thingiverse!](https://www.thingiverse.com/thing:5910348)
 
 ## Code Setup
 Using the PlatformIO add-on for Visual Studio Code, import the project folder, and open `main.cpp`
