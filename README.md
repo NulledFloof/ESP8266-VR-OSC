@@ -100,7 +100,8 @@ Hit Save and navigate to the `PF` tab.
 ## Debugging
 There are a lot of moving parts to this, so here are a few programs that will help you:
 - [Protokol](https://hexler.net/protokol) is great for receiving OSC data. 
-- [SendOSC](https://github.com/yoggy/sendosc) is a command line app for sending OSC data. 
+- [SendOSC](https://github.com/yoggy/sendosc) is a command line app for sending OSC data.
+- If your uploaded avatar in VRC isn't sending out the OSC parameter, but is listed in the debug menu; delete the avatar OSC configs in `~\AppData\LocalLow\VRChat\VRChat\OSC\{userId}\Avatars\{avatarId}.json` [More info in the VRC Docs](https://docs.vrchat.com/docs/osc-avatar-parameters).
 
 Other notes:
 - Pay attention to the data type being sent and received, they have to be the same (bool/float)
