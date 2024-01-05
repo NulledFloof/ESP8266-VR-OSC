@@ -1,3 +1,4 @@
+
 # ESP8266 OSC Haptics
 A quick and cheap way to add haptics to your VR headset or body for social VR apps. I've designed this to work with ChilloutVR (with [kafeijao’s](https://github.com/kafeijao/Kafe_CVR_Mods/tree/master/OSC) OSC mod) and VRChat. It's more or less a "native" approach, utilizing OSC integration in these social VR apps.   
 
@@ -57,7 +58,14 @@ We are going to add two AAS (Advanced Avatar Settings) entries:
 
 
 ### VRC
-(Will be added in the future, Not yet tested)
+Add a VRC Contact Receiver Script to the head of you avatar and adjust it accordingly. 
+
+![VRC_CC_EX](https://github.com/NulledFloof/ESP8266-VR-OSC/blob/main/Images/VRC_Contact_Receiver_Example.png)
+
+Enter your parameter and make sure it has the same name as the address we set in the ESP firmware. 
+That's it! VRC automatically creates the OSC parameter, so no need to add anything to you FX layer.  
+
+![VRC_CC](https://github.com/NulledFloof/ESP8266-VR-OSC/blob/main/Images/VRC_Contact_Receiver_Script.png)
 
 
 ## Software
